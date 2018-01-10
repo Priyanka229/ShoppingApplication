@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent" android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+        <ImageView
+            android:id="@+id/image_iv"
+            android:layout_width="80dp"
+            android:layout_height="120dp"
+            android:src="@drawable/mobile"/>
+
+        <LinearLayout
+            android:id="@+id/description_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_toRightOf="@+id/image_iv"
+            android:layout_toEndOf="@+id/image_iv"
+            android:layout_marginTop="10dp">
+            <TextView
+                android:id="@+id/title_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Infinix Zero 5 (Champagne Gold, 64 GB)"
+                android:textColor="#000000"/>
+
+            <TextView
+                android:id="@+id/rating_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rating_shape"
+                android:text="4.3"
+                android:textColor="#ffffff"
+                android:layout_marginTop="3dp"
+                android:paddingLeft="7dp"
+                android:paddingRight="7dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/price_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="\u20B9 17,999"
+                android:textColor="#000000"
+                android:textStyle="bold"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/exclusive_available_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Exclusive available"
+                android:textColor="#494949"
+                android:layout_marginTop="3dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:textSize="12sp"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="#696969"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="5dp"
+        android:layout_below="@+id/image_iv"/>
+</LinearLayout>
